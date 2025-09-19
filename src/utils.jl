@@ -1,4 +1,4 @@
-using DataFrames, ElasticArrays
+using DataFrames
 
 export get_untreated_profiles, get_treated_profiles
 
