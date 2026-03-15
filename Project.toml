@@ -1,7 +1,7 @@
 name = "LincsProject"
 uuid = "f951e42b-01cc-4281-9607-5c79d22473fa"
-authors = ["Sébastien Lemieux <s.lemieux@umontreal.ca>"]
 version = "0.2.2"
+authors = ["Sébastien Lemieux <s.lemieux@umontreal.ca>"]
 
 [deps]
 BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
@@ -14,6 +14,7 @@ LocalRegistry = "89398ba2-070a-4b16-a995-9893c55d93cf"
 ProgressBars = "49802e3a-d2f1-5c88-81d8-b72133a6f568"
 
 [compat]
+DataFrames = "1.8.1"
 ElasticArrays = "1.2.12"
 LocalRegistry = "0.5.7"
 julia = ">= 1.10"

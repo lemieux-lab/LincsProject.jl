@@ -1,7 +1,15 @@
 include("../src/LincsProject.jl")
 using DataFrames
 
-l = LincsProject.Lincs("/scratch/lincs_beta/", "level3_beta_all_n3026460x12328.gctx", "data/lincs.jld2");
+
+# Name output file with LINCS landmark gene data
+out_dir = "./data"
+mkpath(out_dir)
+out_file = joinpath(out_dir, "lincs.jld2")
+
+# Create output file
+l = LincsProject.Lincs(joinpath("/home/muninn/scratch/lincs_beta/", ""), "level3_beta_all_n3026460x12328.gctx", out_file)
+
 trt_cp = l[:pert_type, :trt_cp]
 
 lcp = l[trt_cp]
